@@ -28,5 +28,9 @@
   - Perfect Secrecy = Computationally secure + Semantically Secure
 <img width="834" alt="Screenshot 2023-11-07 at 7 05 31 PM" src="https://github.com/Vamckis/Cryptanalysis/assets/71128825/0fb8196b-37a4-4f13-8e61-8879d90a5ad4">
  
-### Symmetric ciphers
-### Asymmetric ciphers
+### Hash Functions
+- It converts data of any size into a fixed size string of characters.
+- They are used for data integrity check, compression, and security.
+- They are fast, secure, collision-resistant, deterministic.
+- H(M) = D (D: Digest, H: Hash function)
+- Secure Hash function is used for Passowrd protection.
