@@ -1,5 +1,5 @@
 ## Symmetric Encryption
-- Same key used for E & D
+- Same key used for Encyption & Decryption
 - PKCS (Public Key Cryptography Standards) are 15 widely accepted standards.
 ### Types:
 - Monoalphabetic sunstitution ciphers
@@ -13,15 +13,15 @@
 - Transposition / Permutation Ciphers (Non Key)
 - Modern block ciphers: Uses subsitution an Transposition together.
   - DES (Data Encryption Standard)
-  - 3DES (Triple DES) : E(E(E(M))) = C
+  - 3DES (Triple DES) : E(E(E(M))) = C ; Three encryption keys are used.
   - AES (Advanced Encryption standard)
  
   ### Modes in Symmetric Encryption
-  - ECB : Not semantically secure. Not recommanded for images. Recommanded only for small text.
+  - ECB : Not semantically secure. Recommanded only for small texts. Not recommanded for images.
     - <img width="860" alt="Screenshot 2023-11-07 at 7 39 48 PM" src="https://github.com/Vamckis/Cryptanalysis/assets/71128825/61e18672-e93e-4ecc-bc66-7bdd2858af0f">   
-  - CBC : Uses IV (Initialization vector) at beginning of cipher. This introduces additional randomness and avoids pattern matching.
+  - CBC : Uses IV (Initialization vector) at beginning of cipher. This introduces additional randomness and avoids pattern matching. Requires Padding.
     - <img width="423" alt="Screenshot 2023-11-07 at 7 40 02 PM" src="https://github.com/Vamckis/Cryptanalysis/assets/71128825/2e6c9444-0238-40e1-86e8-423a5ce9587e"> 
-  - CFB: Similar to CBC, IV is added to Block Cipher. No padding is required.
+  - CFB: Similar to CBC, IV is added to Block Cipher. Padding is not required.
   - OFB: 
     - <img width="424" alt="Screenshot 2023-11-07 at 7 42 44 PM" src="https://github.com/Vamckis/Cryptanalysis/assets/71128825/23aeb65f-c956-4152-a1d6-bc9161cf6ecf">
   - CTR: Nonce(random characters) is used instead of IV.
